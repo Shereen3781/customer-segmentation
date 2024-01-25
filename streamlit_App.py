@@ -8,7 +8,7 @@ df= pd.read_csv('final_customer_data_with_recommendations.csv')
 
 # Add a multiselect widget to select rows based on the index
 customer= sorted(df.User_Id.unique())
-selected_indices = st.multiselect('Select customer:', options=customer)
+selected_indices = st.multiselect('Select a customer:', options=customer)
 
 # Subset the dataframe with the selected indices
 selected_rows = df.loc[df['User_Id'].isin(selected_indices)]
