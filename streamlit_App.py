@@ -3,7 +3,6 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(layout="wide")
-st.cache_data
 
 df= pd.read_csv('final_customer_data_with_recommendations.csv')
 
