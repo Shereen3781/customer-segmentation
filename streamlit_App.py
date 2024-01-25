@@ -14,6 +14,6 @@ selected_indices = st.multiselect('Select customer:', options=customer)
 selected_rows = df.loc[df['User_Id'].isin(selected_indices)]
 
 # Display the selected data
-st.write('Selected customer:')
+st.write('Recomended merchants for selected customer are:')
 st.column_config.Column(width="large")
 st.dataframe(selected_rows.drop('User_Id', axis =1), hide_index=True)
